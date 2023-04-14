@@ -14,7 +14,11 @@ public class LottoDBHelper extends SQLiteOpenHelper {
     public LottoDBHelper(Context context, int version){
         super(context, DB_NAME, null, version);
     }
-
+    @Override
+    public void onConfigure(SQLiteDatabase db) {
+        super.onConfigure(db);
+        db.disableWriteAheadLogging();
+    }
     //테이블생성
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -22,12 +26,12 @@ public class LottoDBHelper extends SQLiteOpenHelper {
 //        Cursor cursor = db.rawQuery(("SELECT COUNT(*) FROM testlotto5"),null);
 //        cursor.moveToFirst();
 //        lottoRound = cursor.getInt(0);
-//        db.execSQL("CREATE TABLE testlotto5(" +
+//     db.execSQL("CREATE TABLE testlotto5(" +
 //                "`idx` INTEGER PRIMARY KEY AUTOINCREMENT," +
-//                " `n1` text ," +
-//                " `n2` text ," +
+//               " `n1` text ," +
+//               " `n2` text ," +
 //                " `n3` text ," +
-//                " `n4` text ," +
+//              " `n4` text ," +
 //                " `n5` text ," +
 //                " `n6` text ," +
 //                " `nb` text);");

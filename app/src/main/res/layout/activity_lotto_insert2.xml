@@ -192,7 +192,7 @@
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:text="초기화"
-                        android:textSize="18dp" />
+                        android:textSize="20dp" />
 
                     <Button
                         android:id="@+id/btn_insert"
@@ -200,7 +200,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:textSize="18dp"
+                        android:textSize="20dp"
                         android:text="저장" />
 
                 </TableRow>

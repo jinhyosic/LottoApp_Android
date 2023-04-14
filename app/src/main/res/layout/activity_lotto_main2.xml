@@ -8,12 +8,6 @@
     tools:context=".LottoMain2">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
-
-    <LinearLayout
         android:id="@+id/frameLayout1"
         android:layout_width="0dp"
         android:layout_weight="25"
@@ -127,11 +121,5 @@
 
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"></LinearLayout>
 
 </LinearLayout>

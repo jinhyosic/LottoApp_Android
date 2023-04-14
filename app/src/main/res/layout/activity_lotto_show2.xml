@@ -307,6 +307,8 @@
                         android:id="@+id/btn_reset"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         android:textSize="20dp"
                         android:text="초기화" />
 
@@ -314,6 +316,8 @@
                         android:id="@+id/btn_main"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         android:text="확인"
                         android:textSize="20dp" />
 
